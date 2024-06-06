@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #e9abb1;    /* Use for primary text, accents, highlights, and call-to-action buttons */
+  --secondary-color: #cb808b;  /* Use for secondary elements like headings and subheadings */
+  --tertiary-color: #a35c6e;   /* Use for prominent elements like navigation bars and main buttons */
+  --background-color: #162a40; /* Use for main background color */
+  --text-color: #1a364e;       /* Use for general text color and other elements that need to stand out against the dark background */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
