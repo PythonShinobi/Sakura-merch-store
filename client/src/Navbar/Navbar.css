@@ -94,6 +94,61 @@ header {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1920px) {
+  .logo {
+    font-size: 60px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 30px;
+    margin: 0 14px;
+  }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1500px) {
+  .logo {
+    font-size: 40px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 30px;
+    margin: 0 12px;
+  }
+}
+
+@media screen and (max-width: 1699px) and (min-width: 1300px) {
+  .logo {
+    font-size: 35px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 27px;
+    margin: 0 7px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 25px;
+    margin: 0 7px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 20px;
+    margin: 0 4px;
+  }
+}
+
 /* Mobile Styles */
 @media (max-width: 500px) {
   .nav-toggle {
