@@ -1,0 +1,250 @@
+#t-shirts {
+    background-color: #D4C9C7; /* Very Light Grayish-Pink */
+    color: #051822; /* Dark Blue/Black */
+    padding: 20px 20px;
+    text-align: center;   
+}
+
+.heading span{
+    color: var(--tertiary-color);
+    border-radius: .5rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding:0 1.5rem;
+}
+
+.heading{
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color:#051822;    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust as needed */
+    gap: 10px; /* Adjust the gap between items */
+    margin: -20px auto 20px auto; /* Adjust margin to move paragraph closer to heading */
+}
+
+.grid img {
+    width: 100%;
+    height: 90%;
+    border-radius: 8px; /* Add rounded corners to the images */
+}
+
+.item {
+    position: relative;
+}
+
+.price {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* For large screens (e.g., 1920px and above) */
+@media screen and (min-width: 1920px) {
+    #t-shirts .heading {
+        font-size: 5.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #t-shirts .heading span {
+        font-size: 5.5rem;
+    }
+
+    #t-shirts .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Allows for wrapping */
+        gap: 15px;        
+    }
+
+    #t-shirts .grid img {
+        width: 100%;
+        height: 85%;
+        border-radius: 8px; /* Maintain aspect ratio and rounded corners */
+    }
+
+    #t-shirts .price {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    #t-shirts .price {
+        font-size: 23px;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 1699px) {
+    #t-shirts .heading {
+        font-size: 4.2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #t-shirts .heading span {
+        font-size: 4.2rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #t-shirts .heading {
+        font-size: 4.2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #t-shirts .heading span {
+        font-size: 4.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    #t-shirts .heading {
+        font-size: 3rem;
+        padding-bottom: 3.1rem;
+    }
+
+    #t-shirts .heading span {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #t-shirts .heading {
+        font-size: 3rem;
+        padding-bottom: 3.1rem;
+    }
+
+    #t-shirts .heading span {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 499px) and (min-width: 400px) {
+    #t-shirts .heading {
+        font-size: 2rem;
+        padding-bottom: 3.1rem;
+        white-space: nowrap; /* Add this line to prevent text wrapping */
+    }
+
+    #t-shirts .heading span {
+        font-size: 2.2rem;
+    }
+    
+    #t-shirts .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px;
+    }
+
+    #t-shirts .grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #t-shirts .price {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+/* For screens between 370px and 399px */
+@media screen and (max-width: 399px) and (min-width: 370px) {
+    #t-shirts .heading {
+        font-size: 2rem;
+        padding-bottom: 3.1rem;
+        white-space: nowrap; /* Add this line to prevent text wrapping */
+    }
+
+    #t-shirts .heading span {
+        font-size: 2.2rem;
+    }
+    
+    #t-shirts .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px;
+    }
+
+    #t-shirts .grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #t-shirts .price {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+/* For screens with a maximum width of 360px */
+@media screen and (max-width: 360px) {
+    #t-shirts .heading {
+        font-size: 1.8rem;
+        padding-bottom: 1.5rem;
+        white-space: nowrap; /* Add this line to prevent text wrapping */
+    }
+
+    #t-shirts .heading span {
+        font-size: 2.2rem;
+    }
+
+    #t-shirts .item {
+        margin-top: 30px;
+    }
+
+    #t-shirts .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 8px;
+    }
+
+    #t-shirts .grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #t-shirts .price {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #t-shirts .heading {
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+        white-space: nowrap; /* Add this line to prevent text wrapping */
+    }
+
+    #t-shirts .heading span {
+        font-size: 1.9rem;
+    }
+
+    #t-shirts .item {
+        margin-top: 30px;
+    }
+
+    #t-shirts .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 8px;
+    }
+
+    #t-shirts .grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #t-shirts .price {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

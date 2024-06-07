@@ -187,7 +187,7 @@
     .overlay h1 {
         font-size: 35px;
         white-space: nowrap; /* Prevent text wrapping */        
-        transform: translate(-10%, -60%);
+        transform: translate(-10%, -30%);
     }
 
     .overlay .btn {
@@ -203,7 +203,7 @@
 
     #hero .hero-image {
         width: 100%;
-        margin-top: -50px;
+        margin-top: -60px;
     }
 
     .overlay {
@@ -231,7 +231,7 @@
 @media screen and (max-width: 499px) and (min-width: 400px) {
     #hero .hero-image {
         width: 100%;
-        margin-top: -50px;
+        margin-top: -60px;
     }
 
     .overlay {
@@ -258,7 +258,7 @@
 @media screen and (max-width: 399px) and (min-width: 370px) {
     #hero .hero-image {
         width: 100%;
-        margin-top: -50px;
+        margin-top: -60px;
     }
 
     .overlay {
@@ -285,7 +285,7 @@
 @media screen and (max-width: 360px) {
     #hero .hero-image {
         width: 100%;
-        margin-top: -50px;
+        margin-top: -60px;
     }
 
     .overlay {
@@ -311,7 +311,7 @@
 @media screen and (max-width: 320px) {
     #hero .hero-image {
         width: 100%;
-        margin-top: -50px;
+        margin-top: -60px;
     }
 
     .overlay {
