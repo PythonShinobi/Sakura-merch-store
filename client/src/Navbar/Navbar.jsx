@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className={`nav-menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
             <ul>
               <li>
-                <a href="#home" className={`nav-link ${activeSection === "home" ? "active-link" : ""}`} onClick={closeMenuOnMobile}>
+                <a href="#hero" className={`nav-link ${activeSection === "hero" ? "active-link" : ""}`} onClick={closeMenuOnMobile}>
                   Home
                 </a>
               </li>
@@ -100,19 +100,19 @@ const Navbar = () => {
                 {showDropdown && (
                   <ul className="dropdown-menu">
                     <li>
-                      <a href="#t-shirts" onClick={toggleDropdown}>Shirts</a>
+                      <a href="#t-shirts" className={`nav-link ${activeSection === "t-shirts" ? "active-link" : ""}`} onClick={toggleDropdown}>Shirts</a>
                     </li>
                     <li>
-                      <a href="#shoes" onClick={toggleDropdown}>Shoes</a>
+                      <a href="#shoes" className={`nav-link ${activeSection === "shoes" ? "active-link" : ""}`} onClick={toggleDropdown}>Shoes</a>
                     </li>
                     <li>
-                      <a href="#pillows" onClick={toggleDropdown}>Pillows</a>
+                      <a href="#pillows" className={`nav-link ${activeSection === "pillows" ? "active-link" : ""}`} onClick={toggleDropdown}>Pillows</a>
                     </li>
                     <li>
-                      <a href="#phone-cases" onClick={toggleDropdown}>Cases</a>
+                      <a href="#phone-cases" className={`nav-link ${activeSection === "phone-cases" ? "active-link" : ""}`} onClick={toggleDropdown}>Cases</a>
                     </li>
                     <li>
-                      <a href="#phone-cases" onClick={toggleDropdown}>Mugs</a>
+                      <a href="#mugs" className={`nav-link ${activeSection === "mugs" ? "active-link" : ""}`} onClick={toggleDropdown}>Mugs</a>
                     </li>
                   </ul>
                 )}

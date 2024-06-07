@@ -1,11 +1,15 @@
 /* Navbar.css */
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: var(--background-color);
   color: var(--primary-color);
+  z-index: 1000; /* Ensure this is higher than the hero section */  
 }
 
 .logo {
@@ -40,9 +44,8 @@ header {
   color: var(--primary-color);
 }
 
-.nav-link:hover,
-.active-link {
-  color: var(--secondary-color);
+.active-link {  
+  text-decoration: underline;  
 }
 
 /* Dropdown Menu */
@@ -66,7 +69,8 @@ header {
 }
 
 .dropdown-menu li {
-  margin: 5px 0;
+  margin: 10px 0;
+  padding-left: 15px;
 }
 
 .dropdown-menu a {
@@ -90,16 +94,12 @@ header {
   cursor: pointer;
 }
 
-.active-link {
-  font-weight: bold;
-  text-decoration: underline;  
-}
-
 /* Mobile Styles */
 @media (max-width: 500px) {
   .nav-toggle {
     display: block;
-    margin-right: 16px;
+    margin-right: 9px;
+    margin-top: 5px;
   }
 
   .nav-menu {
