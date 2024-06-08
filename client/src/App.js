@@ -6,6 +6,7 @@ import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero-Section/Hero";
 import TShirts from "./t-shirts/t-shirts";
 import Shoes from "./shoes/shoes";
+import Pillows from "./pillows/pillow";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Hero />
             <TShirts />
             <Shoes />
+            <Pillows />
         </Router>
     );
 };
