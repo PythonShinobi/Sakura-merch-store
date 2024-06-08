@@ -9,6 +9,7 @@ import Shoes from "./shoes/shoes";
 import Pillows from "./pillows/pillow";
 import Cases from "./phone-cases/phone-case";
 import Mugs from "./mugs/mugs";
+import About from "./About/About";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Pillows />
             <Cases />
             <Mugs />
+            <About />
         </Router>
     );
 };
