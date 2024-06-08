@@ -192,8 +192,9 @@
 /* For screens with a maximum width of 360px */
 @media screen and (max-width: 360px) {
     #phone-cases .heading {
-        font-size: 2rem;
+        font-size: 2.2rem;
         padding-bottom: 2.2rem;
+        white-space: nowrap;
     }
 
     #phone-cases .heading span {

@@ -16,22 +16,22 @@ import case13 from "./images/phone-case13 (13).jpeg";
 
 const Cases = () => {
   const cases = [
-    { src: case1, alt: "Shirt 1", price: "Ksh 800" },
-    { src: case2, alt: "Shirt 2", price: "Ksh 800" },
-    { src: case3, alt: "Shirt 3", price: "Ksh 800" },
-    { src: case4, alt: "Shirt 4", price: "Ksh 800" },
-    { src: case5, alt: "Shirt 5", price: "Ksh 800" },    
-    { src: case7, alt: "Shirt 7", price: "Ksh 800" },
-    { src: case8, alt: "Shirt 8", price: "Ksh 800" },    
-    { src: case10, alt: "Shirt 10", price: "Ksh 800" },
-    { src: case11, alt: "Shirt 11", price: "Ksh 800" },
-    { src: case12, alt: "Shirt 12", price: "Ksh 800" },
-    { src: case13, alt: "Shirt 13", price: "Ksh 800" },
+    { src: case1, alt: "phone-case 1", price: "Ksh 800" },
+    { src: case2, alt: "phone-case 2", price: "Ksh 800" },
+    { src: case3, alt: "phone-case 3", price: "Ksh 800" },
+    { src: case4, alt: "phone-case 4", price: "Ksh 800" },
+    { src: case5, alt: "phone-case 5", price: "Ksh 800" },    
+    { src: case7, alt: "phone-case 7", price: "Ksh 800" },
+    { src: case8, alt: "phone-case 8", price: "Ksh 800" },    
+    { src: case10, alt: "phone-case 10", price: "Ksh 800" },
+    { src: case11, alt: "phone-case 11", price: "Ksh 800" },
+    { src: case12, alt: "phone-case 12", price: "Ksh 800" },
+    { src: case13, alt: "phone-case 13", price: "Ksh 800" },
   ];
 
   return (
     <section id="phone-cases">
-      <h1 className="heading"><span>Premium</span> Phone cases</h1>
+      <h1 className="heading"><span>Premium</span> Cases</h1>
       <div className="grid">
         {cases.map((phone_case, index) => (
           <div className="item" key={index}>
@@ -41,7 +41,7 @@ const Cases = () => {
         ))}
       </div>
     </section>
-    );
+  );
 };
 
 export default Cases;
