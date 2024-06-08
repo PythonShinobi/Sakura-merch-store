@@ -22,7 +22,7 @@
 }
 
 #about p {
-  color: #031930;
+  color: rgba(0, 0, 0, 0.7);
   font-size: 1rem; /* Standard font size */
   line-height: 1.6; /* Increase line height for better readability */
   margin: 20px auto; /* Adjust margin to create space between paragraphs */
