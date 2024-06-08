@@ -7,6 +7,7 @@ import Hero from "./Hero-Section/Hero";
 import TShirts from "./t-shirts/t-shirts";
 import Shoes from "./shoes/shoes";
 import Pillows from "./pillows/pillow";
+import Cases from "./phone-cases/phone-case";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <TShirts />
             <Shoes />
             <Pillows />
+            <Cases />
         </Router>
     );
 };
