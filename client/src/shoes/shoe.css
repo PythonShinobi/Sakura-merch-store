@@ -1,0 +1,253 @@
+#shoes {
+    background-color: #D4C9C7; /* Very Light Grayish-Pink */
+    color: #051822; /* Dark Blue/Black */
+    padding: 20px 20px;
+    text-align: center;   
+}
+
+#shoes .heading span{
+    color: var(--tertiary-color);
+    border-radius: .5rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 9px;
+}
+
+#shoes .heading{    
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color:#051822;
+    margin-bottom: 30px;
+}
+
+#shoes .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust as needed */
+    gap: 10px; /* Adjust the gap between items */
+    margin: -60px auto 20px auto; /* Adjust margin to move paragraph closer to heading */
+}
+
+#shoes .grid img {
+    width: 100%;
+    height: 90%;
+    border-radius: 8px; /* Add rounded corners to the images */
+}
+
+#shoes .item {
+    position: relative;
+}
+
+#shoes .price {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* For large screens (e.g., 1920px and above) */
+@media screen and (min-width: 1920px) {
+    #shoes .heading {
+        font-size: 5.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #shoes .heading span {
+        font-size: 5.5rem;
+    }
+
+    #shoes .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Allows for wrapping */
+        gap: 15px;        
+    }
+
+    #shoes .grid img {
+        width: 100%;
+        height: 85%;
+        border-radius: 8px; /* Maintain aspect ratio and rounded corners */
+    }
+
+    #shoes .price {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    #shoes .price {
+        font-size: 23px;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 1699px) {
+    #shoes .heading {
+        font-size: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #shoes .heading span {
+        font-size: 3.5rem;
+    }
+
+    #shoes .grid {
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #shoes .heading {
+        font-size: 4.2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #shoes .heading span {
+        font-size: 4.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    #shoes .heading {
+        font-size: 3.2rem;
+        padding-bottom: 3.8rem;
+    }
+
+    #shoes .heading span {
+        font-size: 3.2rem;
+    }
+
+    #shoes .grid {
+        margin-top: -40px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #shoes .heading {
+        font-size: 3rem;
+        padding-bottom: 3.1rem;
+    }
+
+    #shoes .heading span {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 400px) {
+    #shoes .heading {
+        font-size: 2.5rem;
+        padding-bottom: 3.6rem;
+    }
+
+    #shoes .heading span {
+        font-size: 2.5rem;
+    }
+    
+    #shoes .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px;
+    }
+
+    #shoes .grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #shoes .price {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+/* For screens between 370px and 399px */
+@media screen and (max-width: 399px) and (min-width: 370px) {
+    #shoes .heading {
+        font-size: 2rem;
+        padding-bottom: 3.1rem;
+    }
+
+    #shoes .heading span {
+        font-size: 2.2rem;
+    }
+    
+    #shoes .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px;
+    }
+
+    #shoes .grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #shoes .price {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+/* For screens with a maximum width of 360px */
+@media screen and (max-width: 360px) {
+    #shoes .heading {
+        font-size: 2rem;
+        padding-bottom: 2.2rem;
+    }
+
+    #shoes .heading span {
+        font-size: 2.2rem;
+    }
+
+    #shoes .item {
+        margin-top: 30px;
+    }
+
+    #shoes .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 8px;
+    }
+
+    #shoes .grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #shoes .price {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #shoes .heading {
+        font-size: 1.5rem;
+        padding-bottom: 2.2rem;
+    }
+
+    #shoes .heading span {
+        font-size: 1.9rem;
+    }
+
+    #shoes .item {
+        margin-top: 30px;
+    }
+
+    #shoes .grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 8px;
+    }
+
+    #shoes .grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #shoes .price {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
