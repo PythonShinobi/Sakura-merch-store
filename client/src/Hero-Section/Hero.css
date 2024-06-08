@@ -27,7 +27,7 @@
 }
 
 #hero .btn:hover {
-    background-color: #b86f81 /* Light Brown */
+    background-color: #b86f81
 }
 
 .overlay {
@@ -47,7 +47,7 @@
 }
 
 .overlay .btn {
-    background-color: #AA7452; /* Light Brown */
+    background-color: var(--tertiary-color);
     color: #fff; /* White text */
     padding: 10px 20px;
     text-decoration: none;
@@ -56,8 +56,8 @@
     border-radius: 5px;
 }
 
-.overlay .btn:hover {
-    background-color: #7C5841; /* Dark Brown */
+#hero .overlay .btn:hover {
+    background-color: var(--secondary-color);
 }
 
 @media screen and (min-width: 1920px) {
@@ -66,7 +66,7 @@
         margin-top: -80px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 630px;
         height: 330px;
         top: 25%;
@@ -75,14 +75,14 @@
         border-radius: 8px;
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         font-size: 50px;
         white-space: nowrap; /* Prevent text wrapping */  
         padding-bottom: 70px;      
         transform: translate(-1%, 10%);  
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;        
         font-size: 35px;        
     }
@@ -94,7 +94,7 @@
         padding-top: 50px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 630px;        
         top: 12%;
         padding: 80px;
@@ -102,13 +102,13 @@
         border-radius: 8px;
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         font-size: 50px;
         white-space: nowrap; /* Prevent text wrapping */  
         padding-bottom: 20px;        
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;        
         font-size: 39px;        
     }
@@ -120,7 +120,7 @@
         margin-top: -80px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 590px;        
         height: 300px;
         top: 12%;
@@ -129,14 +129,14 @@
         transform: translate(-50%, 60%);
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         font-size: 45px;
         white-space: nowrap; /* Prevent text wrapping */  
         padding-bottom: 60px;  
         transform: translate(-1%, 1%);      
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;        
         font-size: 29px;        
     }
@@ -149,7 +149,7 @@
         margin-top: -80px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 450px;
         top: 25%;
         padding: 60px;
@@ -157,14 +157,14 @@
         border-radius: 8px;
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         font-size: 40px;
         white-space: nowrap; /* Prevent text wrapping */ 
         transform: translate(-9%, -20%);
         padding-bottom: 20px;          
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;
         font-size: 25px;
     }
@@ -176,7 +176,7 @@
         margin-top: -70px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 400px;
         top: 25%;
         padding: 60px;
@@ -184,13 +184,13 @@
         border-radius: 9px;
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         font-size: 35px;
         white-space: nowrap; /* Prevent text wrapping */        
-        transform: translate(-10%, -30%);
+        transform: translate(-10%, -3%);
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;
         font-size: 20px;
     }
@@ -206,7 +206,7 @@
         margin-top: -60px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 320px;
         height: 170px;
         top: 100%;
@@ -214,14 +214,14 @@
         transform: translate(-50%, -170%);
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         font-size: 23px;
         white-space: nowrap; /* Prevent text wrapping */
         transform: translate(-1%, 20%);
         padding-bottom: 34px;                
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;
         font-size: 14px;
     }
@@ -234,21 +234,21 @@
         margin-top: -60px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 240px;        
         transform: translate(-50%, 60%);
         top: 23%;
         padding: 29px;
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         padding-bottom: 10px;
-        font-size: 18px;
+        font-size: 20px;
         white-space: nowrap; /* Prevent text wrapping */
-        transform: translate(-3%, -30%);
+        transform: translate(-5%, -30%);
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;
         font-size: 12px;
     }
@@ -261,21 +261,21 @@
         margin-top: -60px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 240px;        
         transform: translate(-50%, 60%);
         top: 23%;
         padding: 29px;
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         padding-bottom: 10px;
-        font-size: 18px;
+        font-size: 20px;
         white-space: nowrap; /* Prevent text wrapping */
-        transform: translate(-3%, -30%);
+        transform: translate(-5%, -30%);
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;
         font-size: 12px;
     }
@@ -288,21 +288,21 @@
         margin-top: -60px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 240px;        
         transform: translate(-50%, 55%);
         top: 23%;
         padding: 29px;
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         padding-bottom: 10px;
-        font-size: 18px;
+        font-size: 19px;
         white-space: nowrap; /* Prevent text wrapping */
-        transform: translate(-3%, -30%);
+        transform: translate(-5%, -30%);
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;
         font-size: 12px;
     }
@@ -314,21 +314,21 @@
         margin-top: -60px;
     }
 
-    .overlay {
+    #hero .overlay {
         width: 220px;        
         transform: translate(-50%, 55%);
         top: 23%;
         padding: 29px;
     }
 
-    .overlay h1 {
+    #hero .overlay h1 {
         padding-bottom: 10px;
-        font-size: 18px;
+        font-size: 19px;
         white-space: nowrap; /* Prevent text wrapping */
-        transform: translate(-4%, -30%);
+        transform: translate(-5%, -30%);
     }
 
-    .overlay .btn {
+    #hero .overlay .btn {
         padding: 6px 12px;
         font-size: 12px;
     }
