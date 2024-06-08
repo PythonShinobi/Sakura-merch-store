@@ -8,6 +8,7 @@ import TShirts from "./t-shirts/t-shirts";
 import Shoes from "./shoes/shoes";
 import Pillows from "./pillows/pillow";
 import Cases from "./phone-cases/phone-case";
+import Mugs from "./mugs/mugs";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <Shoes />
             <Pillows />
             <Cases />
+            <Mugs />
         </Router>
     );
 };
