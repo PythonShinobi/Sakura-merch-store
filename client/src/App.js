@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero-Section/Hero";
 import TShirts from "./t-shirts/t-shirts";
+import Shoes from "./shoes/shoes";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Navbar />
             <Hero />
             <TShirts />
+            <Shoes />
         </Router>
     );
 };
