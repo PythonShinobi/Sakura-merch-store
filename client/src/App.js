@@ -11,6 +11,7 @@ import Cases from "./phone-cases/phone-case";
 import Mugs from "./mugs/mugs";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
             <Mugs />
             <About />
             <Contact />
+            <Footer />
         </Router>
     );
 };
