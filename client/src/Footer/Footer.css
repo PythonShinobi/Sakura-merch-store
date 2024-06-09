@@ -1,0 +1,34 @@
+footer {
+    background-color: var(--background-color);
+    color: #969A9E; /* Medium Gray with Blue Tint */
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.social-icons a {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+/* TikTok icon hover effect */
+.tiktok:hover {
+    color: #69C9D0; /* TikTok blue */
+}
+
+/* Twitter icon hover effect */
+.twitter:hover {
+    color: rgba(29, 161, 242, 0.8); /* Twitter blue */
+}
+
+/* Reddit icon hover effect */
+.reddit:hover {
+    color: rgba(255, 69, 0, 0.8); /* Reddit orange */
+}
