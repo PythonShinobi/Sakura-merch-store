@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="hero-text">
-          <img src={sakuraImage} alt="Sakura Haruno Image" className="hero-image" />
+          <img src={sakuraImage} alt="Sakura Haruno" className="hero-image" />
           <div className="overlay">
             <h1>Check Out The Merch</h1>
             <a href="#t-shirts" className="btn">View Collection</a>

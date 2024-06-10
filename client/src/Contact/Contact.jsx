@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import "./Contact.css";
+import config from "../config";
 
 const Contact = () => {
   // Store the state of the form data.
@@ -23,7 +24,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://192.168.0.17:5000/api/send-email", formData);
+      const response = await axios.post(`${config.backendURL}/api/send-email`, formData);
       alert(response.data);      
       setFormData({       // Clear the form fields
         name: "",
