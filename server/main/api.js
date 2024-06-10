@@ -54,6 +54,10 @@ emailQueue.process(async (job, done) => {
     }
 });
 
+router.get("/", (req, res) => {
+    res.status(200).send("Server is running and API is accessible.");
+});
+
 router.post("/send-email", (req, res) => {
     const { name, email, message } = req.body;
 
