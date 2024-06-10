@@ -27,19 +27,11 @@ transporter.verify((error, success) => {
     }
 });
 
-// Create a Redis client with custom options
-const redisClient = new Redis({
-    host: '127.0.0.1', // Redis server host
-    port: 6379,        // Redis server port
-    maxRetriesPerRequest: 50, // Increase max retries per request
-    reconnectOnError: (err) => {
-        const targetError = 'READONLY';
-        if (err.message.includes(targetError)) {
-            // Only reconnect when the error contains "READONLY"
-            return true;
-        }
-    }
-});
+// Define the service URI with the connection details.
+const serviceURI = process.env.SERVICE_URI;
+
+// Create a Redis client
+const redisClient = new Redis(serviceURI);
 
 // Create an email queue.
 const emailQueue = new Queue("emailQueue", { redis: redisClient });
