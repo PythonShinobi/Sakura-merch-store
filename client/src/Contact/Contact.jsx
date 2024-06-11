@@ -24,7 +24,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${config.backendURL}/api/send-email`, formData);
+      const response = await axios.post(`${config.backendURL}/send-email`, formData);
       alert(response.data);      
       setFormData({       // Clear the form fields
         name: "",
