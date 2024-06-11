@@ -1,5 +1,5 @@
 // server/main/api.js
-import express from "express";
+import { Router } from "express";
 import nodemailer from "nodemailer";
 import Queue from "bull";
 import env from "dotenv";
@@ -7,7 +7,7 @@ import Redis from "ioredis";
 
 env.config();
 
-const router = express.Router();
+const router = Router();
 
 // Create a Nodemailer transporter.
 const transporter = nodemailer.createTransport({
@@ -55,7 +55,7 @@ emailQueue.process(async (job, done) => {
 });
 
 router.get("/", (req, res) => {
-    res.status(200).send("Sakura backend server is running");
+    res.send("Sakura backend server is running");
 });
 
 router.post("/send-email", (req, res) => {
@@ -65,7 +65,7 @@ router.post("/send-email", (req, res) => {
     emailQueue.add({ name, email, message }, { attempts: 3, backoff: 5000 });
 
     // Respond to the client immediately.
-    res.status(200).send("Email has been sent🙂.");
+    res.send("Email has been sent🙂.");
 });
 
 export default router;
