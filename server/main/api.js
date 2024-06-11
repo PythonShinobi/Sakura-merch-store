@@ -55,7 +55,7 @@ emailQueue.process(async (job, done) => {
 });
 
 router.get("/", (req, res) => {
-    res.status(200).send("Server is running and API is accessible.");
+    res.status(200).send("Sakura backend server is running");
 });
 
 router.post("/send-email", (req, res) => {
