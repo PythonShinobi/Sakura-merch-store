@@ -20,3 +20,4 @@ package-lock.json
 # Ignore editor-specific files
 .vscode/
 .idea/
+.vercel
