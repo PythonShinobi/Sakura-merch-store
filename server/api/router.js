@@ -40,6 +40,7 @@ const emailQueue = new Queue("emailQueue", { redis: redisClient });
 emailQueue.process(async (job, done) => {
     const { name, email, message } = job.data;
     try {
+        console.log('Processing email job:', job.data);  // Add this log
         let info = await transporter.sendMail({
             from: email,
             to: process.env.GMAIL,
@@ -60,6 +61,8 @@ router.get("/", (req, res) => {
 
 router.post("/send-email", (req, res) => {
     const { name, email, message } = req.body;
+
+    console.log(`Received email request: ${name}, ${email}, ${message}`);
 
     // Add the email job to the queue.
     emailQueue.add({ name, email, message }, { attempts: 3, backoff: 5000 });
