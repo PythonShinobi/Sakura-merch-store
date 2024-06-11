@@ -17,6 +17,8 @@ const app = express();
 // Define the origins from which the frontend will be making requests.
 const allowedOrigins = [ process.env.HOST, process.env.PHONE_ADDRESS ]
 
+console.log("Allowed origins:", allowedOrigins);
+
 // Configure CORS to allow requests from specified origins.
 app.use(cors({
 	origin: function (origin, callback) {
