@@ -42,6 +42,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Parse cookies attached to the HTTP requests
 app.use(cookieParser());
 
-app.use("/api", apiRouter);
+app.use("/", apiRouter);
 
 export default app;
